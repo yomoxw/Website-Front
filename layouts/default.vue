@@ -4,9 +4,9 @@
     <v-main class="bg-secondary">
       <slot />
     </v-main>
-    <CookieControl v-if="public_config.NODE_ENV === 'production'" />
     <CommonFooter />
   </v-app>
+  <CookieControl v-if="public_config.NODE_ENV === 'production'" />
 </template>
 
 <script setup>

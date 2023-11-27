@@ -56,6 +56,20 @@ export default defineNuxtConfig({
           controlButtonIconHoverColor: colors.amber.accent4,
           controlButtonHoverBackground: colors.brown.darken4,
         },
+        isModalForced: false,
+        cookies: {
+          necessary: [
+            {
+              description: {
+                en: "Functionnal cookies",
+              },
+              id: "functionnal_cookies",
+              name: {
+                en: "Mandatory",
+              },
+            },
+          ],
+        },
       },
     ],
     [
