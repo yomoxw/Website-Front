@@ -57,13 +57,14 @@ export default defineNuxtConfig({
           controlButtonHoverBackground: colors.brown.darken4,
         },
         isModalForced: false,
+        closeModalOnClickOutside: true,
         cookies: {
           necessary: [
             {
               description: {
                 en: "Functionnal cookies",
               },
-              id: "functionnal_cookies",
+              targetCookieIds: ["functionnal_cookies"],
               name: {
                 en: "Mandatory",
               },
